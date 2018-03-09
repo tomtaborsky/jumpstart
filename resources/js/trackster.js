@@ -28,7 +28,7 @@ var currentTrackList = [];
   Render the tracks given in the API query response.
 */
 Trackster.searchTracksByTitle = function(title) {
-  var stringURL = "http://ws.audioscrobbler.com/2.0/?method=track.search&track=" + title + "&api_key=" + API_KEY + "&format=json";
+  var stringURL = "https://ws.audioscrobbler.com/2.0/?method=track.search&track=" + title + "&api_key=" + API_KEY + "&format=json";
     $.ajax({
       url: stringURL,
       datatype: 'json',
